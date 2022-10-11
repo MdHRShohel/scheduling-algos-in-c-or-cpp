@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void insertionSort(int arr[], int n)
+{
+    int i, insert, j;
+    for (i = 1; i < n; i++)
+    {
+        insert = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > insert)
+        {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = insert;
+    }
+}
+
+
+int main()
+{
+    int arr[100],N,p;
+     cout<<" How many number do you want : ";
+    cin>>N;
+      cout<<"Input: ";
+    for(int i=0;i<N;i++)
+    {
+        cin>>arr[i];
+    }
+    insertionSort(arr, N);
+    cout<<"SORT: ";
+    for (int i = 0; i < N; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+
+    return 0;
+}
