@@ -23,6 +23,24 @@ int main()
     ++obj;
     ++obj;
     obj.Display();
+j;
+    obj.Display();
+j;
+    obj.Display();
+j;
+    obj.Display();
+j;
+    obj.Display();
+j;
+    obj.Display();
+j;
+    obj.Display();
+j;
+    obj.Display();
+j;
+    obj.Display();
+j;
+    obj.Display();
 
     --obj;
     obj.Display();
